@@ -144,10 +144,10 @@ def set_rendering_parameters(scene,
     scene.render.fps = config.render_fps # I think this only applies if I render a video...
 
     # Set render passes: combined, Z, Object ID, Vector
-    scene.view_layers["View Layer"].use_pass_combined = config.render_use_pass_combined
-    scene.view_layers["View Layer"].use_pass_z = config.render_use_pass_z
-    scene.view_layers["View Layer"].use_pass_object_index = config.render_use_pass_object_index
-    scene.view_layers["View Layer"].use_pass_vector = config.render_use_pass_vector
+    scene.view_layers["ViewLayer"].use_pass_combined = config.render_use_pass_combined
+    scene.view_layers["ViewLayer"].use_pass_z = config.render_use_pass_z
+    scene.view_layers["ViewLayer"].use_pass_object_index = config.render_use_pass_object_index
+    scene.view_layers["ViewLayer"].use_pass_vector = config.render_use_pass_vector
 
     # Metadata stamps
     scene.render.use_stamp = config.render_use_stamp

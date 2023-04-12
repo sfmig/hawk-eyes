@@ -345,8 +345,8 @@ class config():
         # Number of pixels in x and y direction (columns and rows respectively)
         # OJO! Blender will round to the nearest integer the pixel number, if it's a real
         self.render_resolution_x_y_in_pixels = input_json_dict.get('render_resolution_x_y_in_pixels',
-                                                                   [self.longitude_range_in_deg*self.pixels_per_deg,
-                                                                    self.latitude_range_in_deg*self.pixels_per_deg])
+                                        [self.longitude_range_in_deg*self.pixels_per_deg,
+                                         self.latitude_range_in_deg*self.pixels_per_deg])
 
         # Check if the number of pixels in x,y direction is all integers
         # if not, round up, and adjust min and max lat-long so that the pixel per deg value stays the same!
@@ -384,6 +384,10 @@ class config():
             print('New camera longitude min-max in rad: {}'.format(self.camera_latitude_min_max_in_rad))
             print('--------------------------------------------------------------------------------------------------')
 
+        # if all floats are finite (integer numbers): format as ints
+        else:
+            self.render_resolution_x_y_in_pixels = [int(elem)
+                                                    for elem in self.render_resolution_x_y_in_pixels]
 
         ################################################################################################################
         # Pixel resolution percentage
