@@ -13,7 +13,7 @@ To achieve our goal, we combined several 🤖 computer vision 👁️ techniques
 
 - Finally, we used the bird head pose data from the motion capture system to define **a virtual camera** 🎥 in Blender, representative of the bird's visual field 🌐 during flight. We used Blender's rendering engine to produce RGB, depth, semantic and optic flow maps over the full visual field of the bird, at every timestep in the trajectory. We used these synthetic data to investigate the birds' gaze strategy around obstacles and when pursuing moving targets.
 
-A visual summary of this work (including links to cool supplementary videos ✨😎) can be found [here](https://drive.google.com/file/d/1HmnPG8llCPGxQonDWB9Vwobwin49WGWj/view?pli=1)
+Check out this [visual summary of our work!](https://drive.google.com/file/d/1HmnPG8llCPGxQonDWB9Vwobwin49WGWj/view?pli=1) Includes links to cool supplementary videos ✨😎
 
 ## Usage
 The code in this repo *does not* constitute a stand-alone software package 📦 😬. 
