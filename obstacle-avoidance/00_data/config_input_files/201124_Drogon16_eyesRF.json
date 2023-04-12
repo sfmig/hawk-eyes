@@ -1,0 +1,24 @@
+{
+    "trial_str": "201124_Drogon16",
+    "date_bird_HP_pair_str": "201124_Drogon_HPold",
+    "suggested_frame_range_for_cli_rendering_leg_1": [
+        714.0,
+        1145.0
+    ],
+    "suggested_frame_range_for_cli_rendering_leg_2": [
+        1922.0,
+        2303.0
+    ],
+    "render_output_suffix": "eyesRF_red_frames_prev",
+    "render_image_use_preview": true,
+    "geometry_csv_date_str": "20210409120755",
+    "transforms_csv_date_str": "20210409122337",
+    "flag_camera_tracks_trajectoryRF": false,
+    "eyesRF_csv_file_str": "Bird_flights_eyesRF_estim_export_csv_20210408173701.csv",
+    "matlab_output_folder_path": "./00_data/additional data/",
+    "frames_TO_L_csv_file_str": "Bird flights selection - video review w frames TO L_210407.csv",
+    "TO_L_csv_folder_path": "/media/sofiam/SSD Storage/sofiam/additional data visual field reconstruction/",
+    "flag_camera_tracks_headRF": false,
+    "flag_camera_tracks_worldRF": false,
+    "flag_save_config_as_json": true
+}
